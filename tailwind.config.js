@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     './resources/**/*.antlers.html',
@@ -6,9 +8,16 @@ module.exports = {
     './content/**/*.md'
   ],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+            sans: ['Inter', ...defaultTheme.fontFamily.sans],
+            mono: ['JetBrains Mono', ...defaultTheme.fontFamily.mono],
+        },
+    },
   },
   plugins: [
-    require('@tailwindcss/typography'),
+        require('@tailwindcss/forms'),
+        require('@tailwindcss/line-clamp'),
+        require('@tailwindcss/typography'),
   ],
 }

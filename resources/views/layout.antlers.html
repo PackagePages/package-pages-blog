@@ -1,16 +1,43 @@
-<!doctype html>
-<html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>{{ title ?? site:name }}</title>
-        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
-    </head>
-    <body class="bg-gray-100 font-sans leading-normal text-gray-800">
-        <div class="mx-auto px-2 lg:min-h-screen flex flex-col items-center justify-center">
-            {{ template_content }}
-        </div>
-        <script src="{{ mix src='/js/site.js' }}"></script>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="uO1abaIzpu1Bw4MPsSvpawEWR1ls8fmZ8uJCFwkn">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>{{ title ?? site:name }}</title>
+    <meta name="description" content="Free domain for your Laravel package.">
+    <meta name="keywords" content="Laravel, PHP, GitHub, CloudFlare, Package">
+    <meta property="og:title" content="Package Pages"/>
+    <meta property="og:description" content="Free domain for your Laravel package."/>
+    <meta property="og:image" content="http://packagepages.dev/storage/previewify/link_card.png"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@packagepages"/>
+    <meta name="twitter:image" content="http://packagepages.dev/storage/previewify/link_card.png"/>
+    <script type="application/ld+json">{
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Package Pages",
+        "description": "Free domain for your Laravel package."
+    }</script>
+
+    <link rel="icon" href="https://packagepages.dev/img/box.svg">
+    <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+{{ template_content }}
+
+<script src="{{ mix src='/js/site.js' }}"></script>
+</body>
 </html>
+
