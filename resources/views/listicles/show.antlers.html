@@ -16,6 +16,8 @@
                         <p class="text-lg text-left text-white sm:text-xl max-w-prose mx-auto">
                             {{ listicle_text | widont:0 }}
                         </p>
+                        {{ glide :src="listicle_asset" w="100" }}
+
                     </li>
                 {{/listicles_replicator}}
             </ul>
