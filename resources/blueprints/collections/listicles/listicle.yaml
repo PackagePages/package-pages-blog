@@ -1,0 +1,73 @@
+title: Listicle
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          display: Content
+          localizable: true
+      -
+        handle: author
+        field:
+          type: users
+          display: Author
+          default: current
+          localizable: true
+          max_items: 1
+      -
+        handle: template
+        field:
+          type: template
+          display: Template
+          localizable: true
+      -
+        handle: listicles_replicator
+        field:
+          collapse: false
+          previews: true
+          sets:
+            new_set:
+              display: 'New Set'
+              fields:
+                -
+                  import: listicle_item
+          display: Listicles_replicator
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          localizable: true
+      -
+        handle: date
+        field:
+          type: date
+          required: true
+          validate:
+            - required
+      -
+        handle: tags
+        field:
+          type: terms
+          taxonomies:
+            - tags
+          display: Tags
+          mode: select

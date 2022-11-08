@@ -1,0 +1,26 @@
+<div class="font-mono antialiased bg-neutral-900">
+    <div class="flex items-center min-h-screen p-6 sm:justify-center sm:px-0">
+        <div class=" space-y-8">
+            {{ partial:logo }}
+            {{ partial:tags }}
+
+            <div class="text-lg text-center text-white sm:text-xl max-w-prose mx-auto">
+                {{ content | widont:0 }}
+            </div>
+            <ul class="space-y-4">
+                {{listicles_replicator}}
+                    <li>
+                        <h2 class="text-lg text-left text-white sm:text-xl max-w-prose mx-auto">
+                            {{index}}. {{ listicle_title | widont:0 | ucfirst }}
+                        </h2>
+                        <p class="text-lg text-left text-white sm:text-xl max-w-prose mx-auto">
+                            {{ listicle_text | widont:0 }}
+                        </p>
+                    </li>
+                {{/listicles_replicator}}
+            </ul>
+
+            {{ partial:cta }}
+        </div>
+    </div>
+</div>
