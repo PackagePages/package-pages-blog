@@ -1,5 +1,17 @@
-<ul>
-    {{ terms }}
-    <li><a href="{{ url }}">{{ title }}</a></li>
-    {{ /terms }}
-</ul>
+<div class="font-mono antialiased bg-neutral-900">
+    <div class="flex items-center min-h-screen p-6 sm:justify-center sm:px-0">
+        <div class="space-y-8">
+            {{ partial:logo }}
+
+            <div class="text-lg text-left text-white sm:text-xl max-w-prose mx-auto">
+                <ul class="list-disc">
+                    {{ terms }}
+                    <li><a href="{{ url }}">{{ title }}</a></li>
+                    {{ /terms }}
+                </ul>
+            </div>
+
+            {{ partial:cta }}
+        </div>
+    </div>
+</div>
