@@ -4,7 +4,7 @@
             {{ partial:logo }}
             {{ partial:tags }}
 
-            <div class="text-lg text-left text-white sm:text-xl max-w-prose mx-auto">
+            <div class="md:text-lg text-left text-white sm:text-xl max-w-[80vw] md:max-w-prose mx-auto">
                 {{ content | widont:0 }}
             </div>
             <ol class="space-y-4">
@@ -15,20 +15,20 @@
                                 {{ partial:link_icon }}
                                 {{index}}.
                             </a>
-                            <a href="{{listicle_link}}">
+                            <a href="{{listicle_link}}" class="break-all">
                                  {{ listicle_title | widont:0 | ucfirst }}
                             </a>
                         </h2>
                         <div class="listicle-image flex items-center justify-center">
                             {{ listicle_assets }}
-                                <img src="{{ url }}" alt="{{ alt }}" class="py-4">
+                                <img src="{{ url }}" alt="{{ alt }}" class="py-4 max-w-[80vw]">
                             {{ /listicle_assets }}
                         </div>
                         <div class="listicle-markdown">
                             {{ listicle_markdown | widont:0 }}
                         </div>
-                        <span>
-                            <a href="{{listicle_link}}" class="text-white flex items-center">
+                        <span class="max-w-[80vw]">
+                            <a href="{{listicle_link}}" class="text-white flex items-center break-all">
                                 {{ partial:link_icon }}
                                 {{listicle_link}}
                             </a>

@@ -1,10 +1,15 @@
 /* This is all you. */
 .listicle-markdown {
     @apply text-white text-base text-left text-white sm:text-xl max-w-prose mx-auto;
+    @apply overflow-x-auto;
     & th:not(:first-of-type) {
-        @apply p-4;
+        @apply md:p-4;
     }
     & td:not(:first-of-type) {
-        @apply px-4;
+        @apply md:px-4;
+    }
+
+    table {
+        @apply overflow-scroll;
     }
 }
