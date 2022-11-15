@@ -41,9 +41,25 @@ sections:
               fields:
                 -
                   import: listicle_item
-          display: Listicles_replicator
+          display: listicles_replicator
           type: replicator
           icon: replicator
+          listable: hidden
+          instructions_position: above
+          visibility: visible
+          always_save: false
+      -
+        handle: listicle_conclussion
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: listicle_conclussion
+          type: markdown
+          icon: markdown
           listable: hidden
           instructions_position: above
           visibility: visible

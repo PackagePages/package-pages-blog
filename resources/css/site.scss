@@ -1,0 +1,10 @@
+/* This is all you. */
+.listicle-markdown {
+    @apply text-white text-base text-left text-white sm:text-xl max-w-prose mx-auto;
+    & th:not(:first-of-type) {
+        @apply p-4;
+    }
+    & td:not(:first-of-type) {
+        @apply px-4;
+    }
+}
