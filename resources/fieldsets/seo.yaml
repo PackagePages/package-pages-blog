@@ -1,0 +1,49 @@
+title: Seo
+fields:
+  -
+    handle: description
+    field:
+      antlers: false
+      display: Description
+      type: textarea
+      icon: textarea
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: keywords
+    field:
+      display: Keywords
+      type: list
+      icon: list
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+  -
+    handle: og_title
+    field:
+      input_type: text
+      antlers: false
+      display: 'OG title'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      instructions: 'If not filled, the title of the page is used'
+  -
+    handle: og_description
+    field:
+      input_type: text
+      antlers: false
+      display: 'OG description'
+      type: text
+      icon: text
+      listable: hidden
+      instructions_position: above
+      visibility: visible
+      always_save: false
+      instructions: 'If not filled the seo description is used.'

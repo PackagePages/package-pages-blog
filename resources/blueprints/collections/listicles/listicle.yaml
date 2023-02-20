@@ -87,3 +87,9 @@ sections:
             - tags
           display: Tags
           mode: select
+  seo:
+    display: SEO
+    fields:
+      -
+        import: seo
+        prefix: seo_

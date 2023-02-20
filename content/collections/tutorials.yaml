@@ -1,6 +1,6 @@
 title: Tutorials
 template: tutorials/show
-layout: layout
+layout: seo
 taxonomies:
   - tags
 revisions: false
