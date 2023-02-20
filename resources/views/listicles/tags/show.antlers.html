@@ -3,7 +3,9 @@
         <div class="space-y-8">
             {{ partial:logo }}
 
-            <div class="text-lg text-left text-white sm:text-xl max-w-prose mx-auto">
+            <div class="text-lg text-left text-white sm:text-xl max-w-prose mx-auto space-y-4">
+                {{content}}
+
                 {{ entries paginate="5" }}
                     <ul class="list-disc">
                         {{ results }}
