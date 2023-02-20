@@ -1,10 +1,10 @@
-title: Listicles
-template: listicles/show
+title: Tutorials
+template: tutorials/show
 layout: seo
 taxonomies:
   - tags
 revisions: false
-route: '/listicles/{year}/{month}/{day}/{slug}'
+route: 'tutorial/{slug}'
 date: true
 sort_dir: asc
 date_behavior:

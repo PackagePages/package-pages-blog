@@ -719,6 +719,23 @@ select {
   overflow: scroll;
 }
 
+.tutorial-container code {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tutorial-container a {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.tutorial-container h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .float-right {
   float: right;
 }
