@@ -8,20 +8,20 @@
 
     <title>{{ title ?? site:name }} - Package pages Blog</title>
 
-    <meta name="description" content="{{seo_description}}">
+    <meta name="description" content="{{seo_description ?? 'PackagePages blog website, The information source for Laravel and package development for Laravel.' }}">
     <meta name="keywords" content="{{ seo_keywords }}{{ value }},{{ /seo_keywords }}">
     <meta property="og:title" content="{{seo_og_title ?? title ?? site:name }}"/>
-    <meta property="og:description" content="{{seo_og_description ?? seo_description}}"/>
-    <meta property="og:image" content="http://packagepages.dev/storage/previewify/link_card.png"/>
+    <meta property="og:description" content="{{seo_og_description ?? seo_description ?? 'PackagePages blog website, The information source for Laravel and package development for Laravel.'}}"/>
+    <meta property="og:image" content="http://packagepages.dev/assets/og-image.png"/>
 
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="@packagepages"/>
-    <meta name="twitter:image" content="http://packagepages.dev/storage/previewify/link_card.png"/>
+    <meta name="twitter:image" content="http://packagepages.dev/assets/og-image.png"/>
     <script type="application/ld+json">{
         "@context": "https://schema.org",
         "@type": "WebPage",
         "name": "Package Pages",
-        "description": "{{seo_description}}"
+        "description": "{{seo_og_description ?? seo_description ?? 'PackagePages blog website, The information source for Laravel and package development for Laravel.'}}"
     }</script>
 
     <link rel="icon" href="https://packagepages.dev/img/box.svg">

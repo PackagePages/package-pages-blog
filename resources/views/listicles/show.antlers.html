@@ -15,9 +15,14 @@
                                 {{ partial:link_icon }}
                                 {{index}}.
                             </a>
+                            {{ if listicle_link}}
+
                             <a href="{{listicle_link}}" class="break-all">
                                  {{ listicle_title | widont:0 | ucfirst }}
                             </a>
+                            {{ else}}
+                                {{ listicle_title | widont:0 | ucfirst }}
+                            {{ /if}}
                         </h2>
                         <div class="listicle-image flex items-center justify-center">
                             {{ listicle_assets }}
@@ -27,12 +32,14 @@
                         <div class="listicle-markdown">
                             {{ listicle_markdown | widont:0 }}
                         </div>
-                        <span class="max-w-[80vw]">
-                            <a href="{{listicle_link}}" class="text-white flex items-center break-all">
-                                {{ partial:link_icon }}
-                                {{listicle_link}}
-                            </a>
-                        </span>
+                        {{ if listicle_link}}
+                            <span class="max-w-[80vw]">
+                                <a href="{{listicle_link}}" class="text-white flex items-center break-all">
+                                    {{ partial:link_icon }}
+                                    {{listicle_link}}
+                                </a>
+                            </span>
+                        {{/if}}
                     </li>
                 {{/listicles_replicator}}
             </ol>
