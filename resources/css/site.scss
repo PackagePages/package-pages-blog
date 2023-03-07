@@ -1,26 +1,41 @@
 /* This is all you. */
-.listicle-markdown {
-    @apply text-white text-base text-left text-white sm:text-xl max-w-prose mx-auto;
+.listicle-markdown, .tutorial-container {
+    @apply text-neutral-400 text-base text-left sm:text-base max-w-prose;
     @apply overflow-x-auto;
     & th:not(:first-of-type) {
         @apply md:p-4;
     }
+
     & td:not(:first-of-type) {
         @apply md:px-4;
+    }
+
+    code {
+        @apply my-4;
     }
 
     table {
         @apply overflow-scroll;
     }
-}
-.tutorial-container {
-    code {
-        @apply my-4;
+
+    h2,h3,h4,h5 {
+        @apply my-4 text-neutral-200;
     }
+
+    h2 {
+        @apply text-2xl;
+    }
+
+    h3 {
+        @apply text-xl;
+    }
+
+    h4 {
+        @apply text-lg;
+    }
+
     a {
         @apply underline;
-    }
-    h2 {
-        @apply text-2xl my-4;
+        @apply hover:text-neutral-200;
     }
 }
