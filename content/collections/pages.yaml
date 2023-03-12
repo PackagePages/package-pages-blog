@@ -1,6 +1,8 @@
 title: Pages
-template: default
+template: pages/show
 layout: seo
+taxonomies:
+  - tags
 revisions: false
 route: '{parent_uri}/{slug}'
 sort_dir: asc
