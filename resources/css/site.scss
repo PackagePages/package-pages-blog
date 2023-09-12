@@ -1,7 +1,9 @@
 /* This is all you. */
 .listicle-markdown, .tutorial-container {
-    @apply text-neutral-400 text-base text-left sm:text-base max-w-prose;
+    @apply text-white text-base text-left sm:text-base max-w-prose;
     @apply overflow-x-auto;
+    @apply leading-7;
+    color: rgba(226,232,240, 1);
     & th:not(:first-of-type) {
         @apply md:p-4;
     }
@@ -19,7 +21,7 @@
     }
 
     h2,h3,h4,h5 {
-        @apply my-4 text-neutral-200;
+        @apply my-4 text-slate-100 tracking-tight font-bold text-4xl;
     }
 
     h2 {
