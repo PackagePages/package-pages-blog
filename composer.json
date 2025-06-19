@@ -9,14 +9,16 @@
     ],
     "type": "project",
     "require": {
-        "php": "^8.0",
+        "php": "^8.3",
+        "calebporzio/sushi": "^2.4",
         "fruitcake/laravel-cors": "^2.0.5",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.0",
         "laravel/sanctum": "^2.14",
         "laravel/tinker": "^2.7",
         "pecotamic/sitemap": "^1.4",
-        "statamic/cms": "3.3.*"
+        "statamic/cms": "3.3.*",
+        "vormkracht10/laravel-seo-scanner": "^3.3"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",
